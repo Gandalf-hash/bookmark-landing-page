@@ -1,1 +1,10 @@
-
+.mobile_nav_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .mobile_navbar {
+    padding: 25px 30px 18px 30px;
+    }

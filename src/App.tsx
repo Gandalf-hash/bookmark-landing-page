@@ -1,9 +1,9 @@
-import React from 'react'
+import AppNavbar  from './components/mobile-nav-bar'
 
 function App() {
   return (
-    <div>
-      
+    <div >
+      <AppNavbar></AppNavbar>
     </div>
   )
 }
