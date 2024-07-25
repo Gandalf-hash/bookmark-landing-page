@@ -1,4 +1,4 @@
-import AppNavbar  from './components/mobile-nav-bar'
+import AppNavbar from './components/navbar'
 import AppPageWrapper from './components/page-wrapper'
 
 function App() {
