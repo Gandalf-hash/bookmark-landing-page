@@ -1,4 +1,9 @@
 import { images } from "@/images";
+import {
+  Menubar,
+  MenubarMenu,
+  MenubarTrigger,
+} from "./ui/menubar";
 
 type props = {
   isNavbar?: boolean;
@@ -7,22 +12,29 @@ type props = {
 export default function AppLogo({ isNavbar = true }: props) {
   const isMobile = window.innerWidth < 768;
   return (
-    <div className="flex flex-row justify-between p-12">
+    <div className="flex items-center flex-row justify-between">
       <div>
         <img
-          className="tablet:w-60"
+          className="desktop:w-60"
           src={images.logo.src}
           alt={images.logo.alt}
         />
       </div>
 
       {isNavbar && isMobile ? (
-        <div>
+        <div className="text-xl">
           <img src={images.hamburger.src} alt="" />
         </div>
       ) : (
-        <></>
+        <Menubar>
+          <MenubarMenu>
+            <MenubarTrigger>Features</MenubarTrigger>
+            <MenubarTrigger>Pricing</MenubarTrigger>
+            <MenubarTrigger>Contact</MenubarTrigger>
+          </MenubarMenu>
+        </Menubar>
       )}
+
     </div>
   );
 }

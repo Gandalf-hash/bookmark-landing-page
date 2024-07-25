@@ -1,10 +1,11 @@
 import AppNavbar  from './components/mobile-nav-bar'
+import AppPageWrapper from './components/page-wrapper'
 
 function App() {
   return (
-    <div >
+    <AppPageWrapper>
       <AppNavbar></AppNavbar>
-    </div>
+    </AppPageWrapper>
   )
 }
 

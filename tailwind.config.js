@@ -18,6 +18,9 @@ export const theme = {
     'desktop': '1280px',
     // => @media (min-width: 1280px) { ... }
   },
+  colors: {
+    'nav-links': '#F98F5F'
+  }
 };
 // eslint-disable-next-line no-undef
 export const plugins = [require("tailwindcss-animate")];
