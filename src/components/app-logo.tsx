@@ -1,21 +1,27 @@
 import { images } from "@/images";
 
-
 type props = {
   isNavbar?: boolean;
 };
 
 export default function AppLogo({ isNavbar = true }: props) {
+  const isMobile = window.innerWidth < 768;
   return (
-    <div className="mobile_nav_wrapper">
+    <div className="flex flex-row justify-between p-12">
       <div>
-        <img src={images.logo.src} alt={images.logo.alt} />
+        <img
+          className="tablet:w-60"
+          src={images.logo.src}
+          alt={images.logo.alt}
+        />
       </div>
 
-      {isNavbar && (
+      {isNavbar && isMobile ? (
         <div>
           <img src={images.hamburger.src} alt="" />
         </div>
+      ) : (
+        <></>
       )}
     </div>
   );
