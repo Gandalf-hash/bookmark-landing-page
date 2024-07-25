@@ -1,10 +1,10 @@
-import AppNavbar from './components/navbar'
-import AppPageWrapper from './components/page-wrapper'
+import AppNavBar from './components/Navbar'
+import AppPageWrapper from './components/ui/page-wrapper'
 
 function App() {
   return (
     <AppPageWrapper>
-      <AppNavbar></AppNavbar>
+      <AppNavBar></AppNavBar>
     </AppPageWrapper>
   )
 }
