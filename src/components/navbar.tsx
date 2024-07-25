@@ -1,5 +1,4 @@
 import { images } from "@/images";
-import { Menubar, MenubarMenu, MenubarTrigger } from "./ui/menubar";
 import { useState } from "react";
 
 export default function AppNavbar() {
@@ -26,20 +25,16 @@ export default function AppNavbar() {
         <div>
           <button onClick={burgerOnClick}>
             {isBurgerClicked ? (
-              <img src={images.mobileMenuClose.src} alt="Close menu" />
+              <img src={images.mobileMenuClose.src} alt="" />
             ) : (
-              <img src={images.hamburger.src} alt="Open menu" />
+              <img src={images.hamburger.src} alt="" />
             )}
           </button>
         </div>
       ) : (
-        <Menubar>
-          <MenubarMenu>
-            <MenubarTrigger>Features</MenubarTrigger>
-            <MenubarTrigger>Pricing</MenubarTrigger>
-            <MenubarTrigger>Contact</MenubarTrigger>
-          </MenubarMenu>
-        </Menubar>
+        <>
+          
+        </>
       )}
     </div>
   );
