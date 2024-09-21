@@ -1,5 +1,5 @@
 import { images } from "@/images";
-import { useState } from "react";
+import {  useState } from "react";
 import AppLogo from "./logo";
 
 export default function AppMobileNavbar() {
@@ -10,15 +10,15 @@ export default function AppMobileNavbar() {
   };
 
   return (
-    <div className="flex items-center flex-row justify-between">
+    <div className="mobile_nav flex items-center flex-row justify-between">
       <AppLogo size="160" />
 
       <div>
         <button onClick={burgerOnClick}>
           {isBurgerClicked ? (
-            <img src={images.mobileMenuClose.src} alt="" />
+            <img src={images.hamburger.src} alt="" height={20} width={20} />
           ) : (
-            <img src={images.hamburger.src} alt="" />
+            <img src={images.mobileMenuClose.src} alt="" height={20} width={20} />
           )}
         </button>
       </div>
